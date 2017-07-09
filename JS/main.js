@@ -1,4 +1,4 @@
-
+/* Printeja els repositoris */
 function printrepos(jsonrepos){
 	var taula = document.getElementById("taula");
 	var repo;
