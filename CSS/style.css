@@ -51,9 +51,8 @@ html,body{
 	color:#990000;
 }
 #success{
-	width:100%;
 	height:auto;
-	display:none;
+	display:block;
 }
 #info{
     overflow:auto;
@@ -98,48 +97,35 @@ html,body{
 	border-bottom-color:#333333;
 	color:#333333;
 }
-
-/* A PARTIR D'AQUI L'HE COMENÇAT A LIAR, REFERHO TOT I CAGARME EN LA PUTA ONCE AGAIN */
-/*
-#llistarepos{
-    width: 100%;
-    height: 50%;
+#divtable{
+	width:100%;
+	max-width:600px;
+	max-height:350px;
+	overflow:auto;
 }
-#llista{
-	list-style:none;
-	-webkit-margin-before: 0.5em;
-    -webkit-margin-after: 0;
-    -webkit-padding-start: 0;
-    width:100%;
-    height:100%;
+table {
+	table-layout: fixed;
+	border-spacing:0.2em;
+	border-collapse:collapse;
 }
-#llista #elem{
-	max-height:1em;
-	height:1em;
+tr{
+	width:100%;
+	border-bottom:solid thin;
 }
-#limitmargins{
-    display: inline;
-    text-align: left;
+#namerepo{
+	width:100%;
+	text-align:left;
 }
-#llista #limitmargins #name{
-	font-size:1.25em;
-	font-weight:bold;
-	display:inline;
+.number{
+	width:5%;
 }
-#llista .stats{
-	display:inline;
-	text-align:right;
-    max-height: 100% ;
+#star{
+	width:100%;
+	max-width:15px;
+	min-width:15px;
 }
-
-
-
-#testing{
-    position: relative;
-    right: 0px;
-    display: inline;
-    float: right;
+#fork{
+	width:100%;
+	max-width:15px;
+	min-width:15px;
 }
-#testing div{
-	display:inline;
-}*/
