@@ -1,0 +1,145 @@
+html,body{
+	text-align:center;
+	background-color:#e6e6e6;
+	width:100vw;
+	height:100vh;
+	margin:0;
+	padding:0;
+	font-family: "Verdana", sans-serif;
+}
+#container{
+	margin-top:5vh;
+	display:inline-block;
+	background-color: white;
+	padding: 1.5em 2.75em 1.5em 2.75em;
+	border-radius:0.5em;
+	box-shadow: 7px 7px 5px #a9a9a9;
+}
+#search{
+	padding:0.5em;
+}
+#search #input1{
+	border-style:solid;
+	border-color:#e6e6e6;
+	border-radius:0.2em;
+	border-width:1px;
+}
+#search #button1{
+	cursor:pointer;
+	font-weight:bold;
+	background-color:#e6e6e6;
+	border-style:solid;
+	border-color:#e6e6e6;
+	border-radius:0.2em;
+	border-width:1px;
+}
+#search #button1:hover{
+	background-color: lightgray;
+}
+#fail{
+	margin-top:5%;
+	padding-left: 0.25em;
+	background-color:#ffcccc;
+	text-align:left;
+	border-style:solid;
+	border-color:#ff8080;
+	border-radius:0.2em;
+	border-width:1px;
+	display:none;
+}
+#fail p{
+	color:#990000;
+}
+#success{
+	width:100%;
+	height:auto;
+	display:none;
+}
+#info{
+    overflow:auto;
+}
+#info img{
+	width:17%;
+	float:left;
+	margin-right:5%
+}
+#desc{
+	display:block;
+}
+.descclass{
+	display:block;
+    text-align:left;
+    color:#333333;
+}
+#desc #username{
+	font-style:italic;
+	font-size:0.8em;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0.25em;
+    color:blue;
+}
+#desc #username:hover{
+	color:#000099;
+}
+#desc #fullname{
+	font-weight:bold;
+	font-size:1.25em;
+    -webkit-margin-before: 0.1em;
+    -webkit-margin-after: 0.1em;
+}
+#desc #descripcio{
+	font-size:0.8em;
+	-webkit-margin-before: 0.25em;
+	-webkit-margin-after: 0em;
+}
+#titolrepos{
+	text-align:left;
+	border-bottom-style:solid;
+	border-bottom-color:#333333;
+	color:#333333;
+}
+
+/* A PARTIR D'AQUI L'HE COMENÇAT A LIAR, REFERHO TOT I CAGARME EN LA PUTA ONCE AGAIN */
+/*
+#llistarepos{
+    width: 100%;
+    height: 50%;
+}
+#llista{
+	list-style:none;
+	-webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+    width:100%;
+    height:100%;
+}
+#llista #elem{
+	max-height:1em;
+	height:1em;
+}
+#limitmargins{
+    display: inline;
+    text-align: left;
+}
+#llista #limitmargins #name{
+	font-size:1.25em;
+	font-weight:bold;
+	display:inline;
+}
+#llista .stats{
+	display:inline;
+	text-align:right;
+    max-height: 100% ;
+}
+
+
+
+#testing{
+    position: relative;
+    right: 0px;
+    display: inline;
+    float: right;
+}
+#testing div{
+	display:inline;
+}*/

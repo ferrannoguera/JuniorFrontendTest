@@ -2,10 +2,49 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/main.js"></script>
     <title>Hello!</title>
 </head>
 <body>
-
-<h1>Hello!</h1>
+	<div id="container">
+		<div id="search">
+			<input id="input1" type="text" placeholder="Search Username..."/>
+			<button onclick='searchuser()' id="button1">Search</button>
+		</div>
+		<div id="success">
+			<div id="info">
+				<img id="imguser" src="https://avatars0.githubusercontent.com/u/29044151?v=3" />
+				<div id="desc">
+					<a class="descclass" id="username">@username</a>
+					<p class="descclass" id="fullname">Full Name</p>
+					<p class="descclass" id="descripcio">this is your bio...</p>
+				</div>
+			</div>
+			<div id="titolrepos">
+				<h3>Repositories</h3>
+			</div>
+			<!--<div id="llistarepos">
+				<ul id="llista">
+					<li>
+						<div id="elem">
+							<div id="limitmargins">
+								
+							</div>
+							<div id="testing">
+								<img><img class="stats" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Octicons-star.svg/2000px-Octicons-star.svg.png" />
+								<div></div>
+								<img><img class="stats" src="http://timhettler.github.io/sassconf-2015/slides/assets/svg/fork.svg" />
+								<div></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>-->
+		</div>
+		<div id="fail">
+			<p>Does not exist</p>
+		</div>
+	</div>
 </body>
 </html>
