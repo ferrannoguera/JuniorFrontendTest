@@ -52,7 +52,7 @@ html,body{
 }
 #success{
 	height:auto;
-	display:block;
+	display:none;
 }
 #info{
     overflow:auto;
@@ -70,14 +70,15 @@ html,body{
     text-align:left;
     color:#333333;
 }
-#desc #username{
+.url{
 	font-style:italic;
 	font-size:0.8em;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0.25em;
     color:blue;
+    text-decoration:none;
 }
-#desc #username:hover{
+.url:hover{
 	color:#000099;
 }
 #desc #fullname{

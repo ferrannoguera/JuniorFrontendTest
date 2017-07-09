@@ -1,3 +1,41 @@
+
+function printrepos(jsonrepos){
+	var taula = document.getElementById("taula");
+	var repo;
+	var a_inner = "";
+    jsonrepos.forEach((repo)=>{
+    	//alert("<td id='namerepo'>"+"<a href='https://github.com/"+repo.owner.login+"/"+repo.name+"'>"+repo.name+"</a></td>");
+       a_inner = a_inner+"<tr>"+
+						"<td id='namerepo'>"+
+						"<a class='url' href='https://github.com/"+repo.owner.login+"/"+repo.name+"'>"+repo.name+"</a>"+
+						"</td>"+
+						"<td class='number'><img id='star' src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Octicons-star.svg/2000px-Octicons-star.svg.png'></td>"+
+						"<td class='number'>"+repo.stargazers_count+"</td>"+
+						"<td class='number'><img id='fork' src='http://timhettler.github.io/sassconf-2015/slides/assets/svg/fork.svg'></td>"+
+						"<td class='number'>"+repo.forks_count+"</td>"+
+						"</tr>";
+    });
+    taula.innerHTML = a_inner;
+}
+
+/* Carrega els repositoris */
+function chargerepos(user){
+	var request = new XMLHttpRequest();
+	request.open('get', 'https://api.github.com/users/'+user+'/repos', true)
+	request.send();
+	request.onreadystatechange = function(){
+		if (request.readyState == XMLHttpRequest.DONE){
+			if (request.status == 200){
+				var jsonrepos = JSON.parse(request.responseText);
+				printrepos(jsonrepos);
+			}
+			else{
+				hideuser();
+				error();
+			}
+		}
+	}
+}
 /* Printeja les dades del usuari */
 function printuser(jsonuser){
 	hideerror();
@@ -18,6 +56,7 @@ function chargeuser(user){
 			if (request.status == 200){
 				var jsonuser = JSON.parse(request.responseText);
 				printuser(jsonuser);
+				chargerepos(user);
 			}
 			else{
 				hideuser();
