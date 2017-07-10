@@ -1,0 +1,14 @@
+#fail{
+	margin-top:5%;
+	padding-left: 0.25em;
+	background-color:#ffcccc;
+	text-align:left;
+	border-style:solid;
+	border-color:#ff8080;
+	border-radius:0.2em;
+	border-width:1px;
+	display:none;
+}
+#fail p{
+	color:#990000;
+}

@@ -1,0 +1,21 @@
+#search{
+	padding:0.5em;
+}
+#search #input1{
+	border-style:solid;
+	border-color:#e6e6e6;
+	border-radius:0.2em;
+	border-width:1px;
+}
+#search #button1{
+	cursor:pointer;
+	font-weight:bold;
+	background-color:#e6e6e6;
+	border-style:solid;
+	border-color:#e6e6e6;
+	border-radius:0.2em;
+	border-width:1px;
+}
+#search #button1:hover{
+	background-color: lightgray;
+}

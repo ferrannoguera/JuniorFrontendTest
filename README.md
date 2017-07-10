@@ -1,3 +1,7 @@
+Temps dedicat: 12-13h.
+He mantingut el main.js malgrat no l'uso, ja que l'implementació de unity testing amb jasmine m'ha fet modificar el codi fins a cert punt on no se si és del tot eficient.
+
+
 # JuniorFrontendTest
 
 ## GOALS

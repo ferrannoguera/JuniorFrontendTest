@@ -60,7 +60,7 @@ function removeoldtable(taula){
 function printrepos(jsonrepos){
 	var taula = document.getElementById("taula");
 	taula = removeoldtable(taula);
-    jsonrepos.forEach((repo)=>{
+    jsonrepos.forEach(function(repo){
 		taula.appendChild(printrow(repo));
 		/*considero que el de dalt es codi mes Clean, maintainable & easy­to­read
 		  pero tambe es podria realitzar de la seguent manera:
